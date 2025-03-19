@@ -2,21 +2,19 @@ package inchecken;
 
 public class Checkpaal
 {
-    
-    
-  private String Location;
-  private int Tarif;
-  
-  
-  public Checkpaal(String Checkpaal)
-  {
-	this.Location ="Nijmegen";
-	this.Tarif = 5;
 
-	
-	
-  }
-  
-  
-  
+    private String location;
+    private int tarif;
+
+    public Checkpaal()
+    {
+	this.location = "Nijmegen";
+	this.tarif = 5;
+
+    }
+
+    public int getTarif() {
+        return tarif;
+    }
+    
 }
