@@ -1,33 +1,19 @@
 package inchecken;
 
-public class Chipkaart extends Main
+public class Chipkaart
 {
-    private boolean check;
-    private int balance;
-    private String owner;
-    Checkpaal qq = new Checkpaal();
+    int balance;
+    String owner;
 
-    public Chipkaart(String owner, boolean check, int balance)
+    public Chipkaart(String owner, int balance)
     {
 	this.owner = owner;
-	this.check = check;
 	this.balance = balance;
-
     }
 
     public void PrintInfo()
     {
-
 	System.out.println(owner);
-	System.out.println(check);
 	System.out.println(balance);
-    }
-
-    public void Checker()
-    {
-	if (balance <= qq.getTarif())
-	{
-	    this.check = true;
-	}
     }
 }
